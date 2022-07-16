@@ -1,10 +1,13 @@
-
 package oops;
 interface Animals{
 	public void walk();
 }
+interface Herbivore{
+	
+}
 
-class Horses implements Animals{
+//multiple inheritance
+class Horses implements Animals, Herbivore{
 	public void walk() {
 		System.out.println("Walks on 4 legs");
 	}
